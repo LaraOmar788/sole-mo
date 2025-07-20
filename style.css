@@ -845,6 +845,17 @@ box-shadow: 0 4px 25px rgb(21 36 55);
       color: black;
       cursor: pointer;
     }
+    .no2 {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #74cdde;
+      color: black;
+      cursor: pointer;
+      margin-left: 3%;
+      margin-top: 2%;
+    }
    .no {
       padding: 12px 30px;
       font-size: 18px;
@@ -1010,14 +1021,4 @@ footer p{
         font-size: 13px;
       }
     }
-       .no2 {
-      padding: 12px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      background-color: #74cdde;
-      color: black;
-      cursor: pointer;
-      margin-left: 3%;
-      margin-top: 2%;
-    }
+
