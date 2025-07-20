@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Page</title>
+  <title>OMAR Limousine</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
+
   <div class="table1">
     <nav>
-      <p>Egypt, Red Sea, Hurghada everywhere you find us</p>
+      <p id="location-text">Egypt, Red Sea, Hurghada everywhere you find us</p>
       <span>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-whatsapp"></i>
@@ -20,33 +21,40 @@
     </nav>
 
     <div class="nav2">
-      <img src="img/Your paragraph text (1).png" alt="Logo">
+      <img src="img/Your paragraph text (1).png" alt="Logo" width="120">
+      <select id="language-selector">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="de">Deutsch</option>
+        <option value="ru">Русский</option>
+      </select>
     </div>
 
-    <h1>
+    <h1 id="main-heading">
       Cars, Minibuses, Hiace, Taxi Rides<br>
       Airport Transfer, Hurghada City Tours, and private<br><br>
       Mix between low price, safety, and luxury
     </h1>
 
-    <button>Our Services</button>
+    <button id="services-button">Our Services</button>
     <img src="img/CAR.png" class="car" alt="Car">
-      <a href="https://wa.me/201063378070" class="whatsapp-float" target="_blank">
-    <span class="tooltip-text">تحدث معنا على واتساب</span>
-    <i class="fab fa-whatsapp"></i>
-  </a>
 
+    <a href="https://wa.me/201063378070" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <span class="tooltip-text" id="whatsapp-tooltip">تحدث معنا على واتساب</span>
   </div>
   <div class="table2">
-    <h1>We Provide The Luxury Transport And Comfortable Experience For You</h1>
+ <h1 id="table2-title">We Provide The Luxury Transport And Comfortable Experience For You</h1>
+
 
     <div class="carousel-wrapper" id="carousel">
       <div class="carousel-track" id="carouselTrack">
         <div class="slide"><img src="img/s1.jpg" alt=""></div>
         <div class="slide"><img src="img/s2.jpg" alt=""></div>
-        <div class="slide"><img src="img/s3.jpg" alt=""></div>
+        <div class="slide"><img src="img/s10.jpg" alt=""></div>
         <div class="slide"><img src="img/s6.jpg" alt=""></div>
-        <div class="slide"><img src="img/s4.jpg" alt=""></div>
+        <div class="slide"><img src="img/w33.jpg" alt=""></div>
         <div class="slide"><img src="img/s5.jpg" alt=""></div>
         <div class="slide"><img src="img/s6.jpg" alt=""></div>
       </div>
@@ -56,61 +64,58 @@
       <div class="carousel-track" id="carouselTrack2">
         <div class="slide"><img src="img/c9.jpg" alt=""></div>
         <div class="slide"><img src="img/c10.jpg" alt=""></div>
-        <div class="slide"><img src="img/c3.jpg" alt=""></div>
-        <div class="slide"><img src="img/c4.jpg" alt=""></div>
-        <div class="slide"><img src="img/c4.jpg" alt=""></div>
+        <div class="slide"><img src="img/c11.jpg" alt=""></div>
+        <div class="slide"><img src="img/c9.jpg" alt=""></div>
+        <div class="slide"><img src="img/c12.jpeg" alt=""></div>
         <div class="slide"><img src="img/c2.jpg" alt=""></div>
-        <div class="slide"><img src="img/c3.jpg" alt=""></div>
+        <div class="slide"><img src="img/c9.jpg" alt=""></div>
         <div class="slide"><img src="img/s5.jpg" alt=""></div>
       </div>
     </div>
+  <h2 id="experiences-title">From Others' Experiences</h2>
 
-    <h2>From Others' Experiences</h2>
+  <div class="carousel-wrapper3" id="carousel3">
+    <div class="carousel-track3" id="carouselTrack3">
+      <div class="slide3"><img src="img/w1.jpg" alt=""><span class="card3">
+        <h1 id="exp1-title">Enjoy an unforgettable journey with us.</h1>
+        <p id="exp1-text">Enjoy an unforgettable journey with our premium limousine service. We provide comfort, safety, and elegance every step of the way.</p>
+      </span></div>
 
-    <div class="carousel-wrapper3" id="carousel3">
-      <div class="carousel-track3" id="carouselTrack3">
-        <div class="slide3"><img src="img/w1.jpg" alt=""><span class="card3">
-          <h1>Enjoy an unforgettable journey with us.</h1>
-          <p>Enjoy an unforgettable journey with our premium limousine service. We provide comfort, safety, and elegance every step of the way.</p>
-        </span></div>
+      <div class="slide3"><img src="img/w2.jpg" alt=""><span class="card3">
+        <h1 id="exp2-title">Wherever you go, we’re by your side — like family</h1>
+        <p id="exp2-text">We offer a premium limousine service that blends safety, comfort, and care. Wherever you go.</p>
+      </span></div>
 
-        <div class="slide3"><img src="img/w2.jpg" alt=""><span class="card3">
-          <h1>Wherever you go, we’re by your side — like family</h1>
-          <p>We offer a premium limousine service that blends safety, comfort, and care. Wherever you go.</p>
-        </span></div>
+      <div class="slide3"><img src="img/w3.jpg" alt=""><span class="card3">
+        <h1 id="exp3-title">A comfortable car that reflects that comfort on their faces.</h1>
+        <p id="exp3-text">From departure to destination, it feels like a calm journey in a car designed to embrace you.</p>
+      </span></div>
 
-        <div class="slide3"><img src="img/w3.jpg" alt=""><span class="card3">
-          <h1>A comfortable car that reflects that comfort on their faces.</h1>
-          <p>From departure to destination, it feels like a calm journey in a car designed to embrace you.</p>
-        </span></div>
+      <div class="slide3"><img src="img/w5.jpg" alt=""><span class="card3">
+        <h1 id="exp4-title">You and your children feel safe and relaxed.</h1>
+        <p id="exp4-text">Comfort isn't just for you — it's for your loved ones too. You’ll feel safe and at ease every moment.</p>
+      </span></div>
 
-        <div class="slide3"><img src="img/w5.jpg" alt=""><span class="card3">
-          <h1>You and your children feel safe and relaxed.</h1>
-          <p>Comfort isn't just for you — it's for your loved ones too. You’ll feel safe and at ease every moment.</p>
-        </span></div>
+      <div class="slide3"><img src="img/w6.jpg" alt=""><span class="card3">
+        <h1 id="exp5-title">We know everything about Egyptian culture.</h1>
+        <p id="exp5-text">We’ll take you to hidden gems and share the beauty of Egyptian culture like you’ve never seen.</p>
+      </span></div>
 
-        <div class="slide3"><img src="img/w6.jpg" alt=""><span class="card3">
-          <h1>We know everything about Egyptian culture.</h1>
-          <p>We’ll take you to hidden gems and share the beauty of Egyptian culture like you’ve never seen.</p>
-        </span></div>
-
-        <div class="slide3"><img src="img/w8.jpg" alt=""><span class="card3">
-          <h1>By your side — like family</h1>
-          <p>We offer reliability, friendliness, and safety on every ride.</p>
-        </span></div>
-      </div>
+      <div class="slide3"><img src="img/w8.jpg" alt=""><span class="card3">
+        <h1 id="exp6-title">By your side — like family</h1>
+        <p id="exp6-text">We offer reliability, friendliness, and safety on every ride.</p>
+      </span></div>
     </div>
   </div>
-
-
+</div>
 <div class="table3">
-  <h1>What makes us different? 🤔</h1>
+  <h1 id="table3-title">What makes us different? 🤔</h1>
   <div class="cards-container">
     <div class="cards-1">
       <span class="cards-sy">
         <i class="fa-solid fa-shield"></i>
-        <h3>Safety first always</h3>
-        <p>
+        <h3 id="card1-title">Safety first always</h3>
+        <p id="card1-text">
           We believe that nothing is more important than the safety of our clients and team. From well-maintained vehicles to professionally trained drivers.
         </p>
       </span>
@@ -118,8 +123,8 @@
     <div class="cards-1">
       <span class="cards-sy">
         <i class="fa-solid fa-money-bill-1-wave fa-flip-vertical"></i>
-        <h3>Low price & friendly</h3>
-        <p>
+        <h3 id="card2-title">Low price & friendly</h3>
+        <p id="card2-text">
           We believe that great service shouldn't come at a high cost. Our low prices never compromise on quality, and our friendly team is always here to help you with a smile.
         </p>
       </span>
@@ -127,8 +132,8 @@
     <div class="cards-1">
       <span class="cards-sy">
         <i class="fa-solid fa-people-group"></i>
-        <h3>Highly skilled drivers</h3>
-        <p>
+        <h3 id="card3-title">Highly skilled drivers</h3>
+        <p id="card3-text">
           Our drivers are more than just experts on the road. They are highly trained, experienced, and committed to delivering a safe, smooth, and professional journey every single time.
         </p>
       </span>
@@ -136,8 +141,8 @@
     <div class="cards-2">
       <span class="cards-sy">
         <i class="fa-solid fa-car-side"></i>
-        <h3>Latest vehicle models</h3>
-        <p>
+        <h3 id="card4-title">Latest vehicle models</h3>
+        <p id="card4-text">
           Ride in comfort and style with our fleet of latest vehicle models. Each car is modern, clean, and equipped with advanced features to ensure a premium travel experience.
         </p>
       </span>
@@ -145,13 +150,14 @@
     <div class="cards-3">
       <span class="cards-sy">
         <i class="fa-solid fa-clock"></i>
-        <h3>Punctuality & 24 hour service</h3>
-        <p>
+        <h3 id="card5-title">Punctuality & 24 hour service</h3>
+        <p id="card5-text">
           Time matters — that’s why we value punctuality in every trip. With our 24/7 service, you can count on us anytime, day or night, for a reliable and on-time experience.
         </p>
       </span>
     </div>
   </div>
+
   <div class="BOXS">
   <div class="box-item">
     <div class="flip-box">
@@ -166,101 +172,97 @@
     </div>
   </div>
   </div>
-
+</div>
 </div>
 <section class="slider-section">
-    <div class="slider-column">
-      <div class="card">
-        <img src="img/cairo (1).jpg" alt="Pyramids" />
-        <div class="cardon">
-          <h3>Cairo</h3>
-          <h2>Any place in Cairo, you can get to know it up close.</h2>
-          <p>Choose your car and rest assured we make you feel the water.</p>
-          <div class="location">📍 Cairo</div>
-          <div class="price">Price Surprise</div>
-          <p>🚗 Car 1–3, Mini Bus 1–8</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/danielle-barnes-_0jBggrKYwE-unsplash.jpg" alt="Museum" />
-        <div class="cardon2">
-          <h3>Luxor</h3>
-          <h2>Any place in Luxor, you can get to know it up close.</h2>
-          <p>Choose your car and rest assured we make you feel the water.</p>
-          <div class="location">📍 Luxor</div>
-          <div class="price">Price Surprise</div>
-          <p>🚗 Car 1–3, Mini Bus 1–8</p>
-        </div>
+  <div class="slider-column">
+    <div class="card">
+      <img src="img/cairo (1).jpg" alt="Pyramids" />
+      <div class="cardon">
+        <h3 id="s1-title">Cairo</h3>
+        <h2 id="s1-heading">Any place in Cairo, you can get to know it up close.</h2>
+        <p id="s1-text">Choose your car and rest assured we make you feel the water.</p>
+        <div class="location" id="s1-location">📍 Cairo</div>
+        <div class="price" id="s1-price">Price Surprise</div>
+        <p id="s1-note">🚗 Car 1–3, Mini Bus 1–8</p>
       </div>
     </div>
 
-    <div class="text-column">
-      <h2>Customized Private Trips</h2>
-      <p>Explore Egypt’s history on a private tour to Historical Places (Cairo, Luxor, etc..)</p>
-      <span>We Care About Your Comfort And Safety</span>
-      <div class="more-btn">
-        <button>More Tours<br />Call Us</button>
+    <div class="card">
+      <img src="img/danielle-barnes-_0jBggrKYwE-unsplash.jpg" alt="Museum" />
+      <div class="cardon2">
+        <h3 id="s2-title">Luxor</h3>
+        <h2 id="s2-heading">Any place in Luxor, you can get to know it up close.</h2>
+        <p id="s2-text">Choose your car and rest assured we make you feel the water.</p>
+        <div class="location" id="s2-location">📍 Luxor</div>
+        <div class="price" id="s2-price">Price Surprise</div>
+        <p id="s2-note">🚗 Car 1–3, Mini Bus 1–8</p>
       </div>
     </div>
-  </section>
-     <div class="big-tab">
-      <h1>Places of enchanting beauty in Hurghada</h1>
-  
-    <div class="table4">
-      
-  <div class="cd1">
-    <img src="img/19951El Gouna Lagune.jpeg">
-    <h2> El Gouna</h2>
-    <P>El Gouna is one of the most beautiful and upscale tourist areas in Egypt, located about 25 km north of Hurghada. It is nicknamed 'Venice of Egypt' because it features artificial lakes and waterways that separate the small islands, connected by stunning bridges that add a special charm to the city.</P>
   </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/ulica-sheraton1.jpg">
-    <h2>sheraton</h2>
-    <P>Sheraton Street is one of the most famous and oldest tourist streets in the city of Hurghada, and it serves as the 'downtown' for visitors of all nationalities. The street extends for a considerable length and combines popular vibes with modern appearances, making it a distinctive destination for anyone seeking enjoyment and variety..</P>
-  </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/The old market in Hurghada.jpg">
-    <h2> The old market in Hurghada</h2>
-    <P>A lively spot in Hurghada where you can explore spices, souvenirs, handmade crafts, and taste authentic Egyptian street life..</P>
-  </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/aussenansicht.jpg">
-    <h2> Mina Mosque</h2>
-    <P>
 
-  Hurghada Marina is a modern waterfront promenade lined with yachts, restaurants, cafés, and boutiques. It’s the perfect place for a sunset walk, fine dining, or simply relaxing by the Red Sea in a stylish, lively atmosphere.</P>
+  <div class="text-column">
+    <h2 id="s-main-title">Customized Private Trips</h2>
+    <p id="s-desc">Explore Egypt’s history on a private tour to Historical Places (Cairo, Luxor, etc..)</p>
+    <span id="s-tagline">We Care About Your Comfort And Safety</span>
+    <div class="more-btn">
+      <button id="s-button">More Tours<br>Call Us</button>
+    </div>
   </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/marina.jpg">
-    <h2> marina</h2>
-    <P>El Gouna is one of the most beautiful and upscale tourist areas in Egypt, located about 25 km north of Hurghada. It is nicknamed 'Venice of Egypt' because it features artificial lakes and waterways that separate the small islands, connected by stunning bridges that add a special charm to the city.</P>
+</section>
+<div class="big-tab">
+  <h1 id="places-title">Places of enchanting beauty in Hurghada</h1>
+
+  <div class="table4">
+    <div class="cd1">
+      <img src="img/19951El Gouna Lagune.jpeg">
+      <h2 id="gouna-title">El Gouna</h2>
+      <p id="gouna-desc">El Gouna is one of the most beautiful and upscale tourist areas in Egypt, located about 25 km north of Hurghada. It is nicknamed 'Venice of Egypt' because it features artificial lakes and waterways that separate the small islands, connected by stunning bridges that add a special charm to the city.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/ulica-sheraton1.jpg">
+      <h2 id="sheraton-title">Sheraton</h2>
+      <p id="sheraton-desc">Sheraton Street is one of the most famous and oldest tourist streets in the city of Hurghada, and it serves as the 'downtown' for visitors of all nationalities. The street extends for a considerable length and combines popular vibes with modern appearances, making it a distinctive destination for anyone seeking enjoyment and variety.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/The old market in Hurghada.jpg">
+      <h2 id="market-title">The old market in Hurghada</h2>
+      <p id="market-desc">A lively spot in Hurghada where you can explore spices, souvenirs, handmade crafts, and taste authentic Egyptian street life.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/aussenansicht.jpg">
+      <h2 id="mina-title">Mina Mosque</h2>
+      <p id="mina-desc">Mina Mosque is one of the most beautiful religious landmarks in Hurghada, featuring stunning architecture and a spiritual atmosphere. It’s an iconic place to visit and admire the cultural beauty of the city.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/marina.jpg">
+      <h2 id="marina-title">Marina</h2>
+      <p id="marina-desc">Hurghada Marina is a modern waterfront promenade lined with yachts, restaurants, cafés, and boutiques. It’s the perfect place for a sunset walk, fine dining, or simply relaxing by the Red Sea in a stylish, lively atmosphere.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/senzo-mall.jpg">
+      <h2 id="senzo-title">Senso Mall</h2>
+      <p id="senzo-desc">Senso Mall is a contemporary shopping center offering a variety of international brands, local shops, cafes, and restaurants. It’s a great spot for fashion, gifts, or simply enjoying a relaxed shopping experience away from the crowd.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/The aquarium.jpg">
+      <h2 id="aquarium-title">The Aquarium</h2>
+      <p id="aquarium-desc">Hurghada Grand Aquarium is home to hundreds of marine species, interactive exhibits, and a walk-through tunnel surrounded by sharks and colorful fish. It’s an exciting and educational experience for families and ocean lovers alike.</p>
+    </div>
+
+    <div class="cd1">
+      <img src="img/Sharm El Naqa.webp">
+      <h2 id="naqa-title">Sharm El Naqa</h2>
+      <p id="naqa-desc">Sharm El Naqa is a serene beach south of Hurghada, known for its crystal-clear waters, soft sands, and vibrant coral reefs. Ideal for snorkeling, swimming, or simply relaxing in untouched natural beauty.</p>
+    </div>
   </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/senzo-mall.jpg">
-    <h2> Senso Mall</h2>
-    <P>
-  Senso Mall is a contemporary shopping center offering a variety of international brands, local shops, cafes, and restaurants. It’s a great spot for fashion, gifts, or simply enjoying a relaxed shopping experience away from the crowd.</P>
-  </div>
-  <!--  -->
-  <div class="cd1">
-    <img src="img/The aquarium.jpg">
-    <h2> The aquarium</h2>
-    <P>
-  Hurghada Grand Aquarium is home to hundreds of marine species, interactive exhibits, and a walk-through tunnel surrounded by sharks and colorful fish. It’s an exciting and educational experience for families and ocean lovers alike</P>
-  </div>
-  <div class="cd1">
-    <img src="img/Sharm El Naqa.webp">
-    <h2> Sharm El Naqa</h2>
-    <P>Sharm El Naqa is a serene beach south of Hurghada, known for its crystal-clear waters, soft sands, and vibrant coral reefs. Ideal for snorkeling, swimming, or simply relaxing in untouched natural beauty..</P>
-  </div>
-      </div>
-  </div>
+</div>
  <section class="testimonials-section">
   <i class="fa-solid fa-envelope-circle-check"></i>
   <h2>What Our Clients Say</h2>
@@ -272,7 +274,7 @@
     <h1>Experience the Luxury Ride</h1>
     <button onclick="showVideo()">Book Now</button>
   </div>
-
+  <button  class="no2" >OPEN Please</button>
   <button onclick="closeVideo()" class="no" id="closeBtn" style="display:none;">✖ Close</button>
 
   <div class="video-container" id="videoContainer" style="display:none;">
@@ -282,45 +284,463 @@
     </video>
   </div>
 </div>
+
 <footer>
-    <div class="footer-container">
-      <!-- About -->
-      <div class="footer-section">
-        <h3>sole mo touristin </h3>
-        <p>Providing elegant and reliable transportation with professional drivers and premium vehicles.</p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Fleet</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="footer-section">
-        <h4>Contact Us</h4>
-        <p>📞 +20 100 000 0000</p>
-        <p>📧 info@luxurylimo.com</p>
-        <p>📍 Hurghada, Egypt</p>
-        <div class="social-icons" style="margin-top: 10px;">
-          <a href="https://wa.me/201000000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        </div>
-      </div>
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-section">
+      <h3 id="about-title">sole mo touristin</h3>
+      <p id="about-desc">Providing elegant and reliable transportation with professional drivers and premium vehicles.</p>
     </div>
 
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      &copy; 2025 sole mo touristin . All rights reserved.
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4 id="quick-links-title">Quick Links</h4>
+      <ul>
+        <li><a href="#" id="link-home">Home</a></li>
+        <li><a href="#" id="link-services">Services</a></li>
+        <li><a href="#" id="link-fleet">Fleet</a></li>
+        <li><a href="#" id="link-contact">Contact</a></li>
+      </ul>
     </div>
-  </footer>
-<script>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4 id="contact-title">Contact Us</h4>
+      <p>📞 <span id="phone-number">+20 1063378070</span></p>
+      <p>📧 <span id="email-address">info@luxurylimo.com</span></p>
+      <p>📍 <span id="location">Hurghada, Egypt</span></p>
+      <div class="social-icons" style="margin-top: 10px;">
+        <a href="https://wa.me/201000000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom" id="footer-bottom">
+    &copy; 2025 sole mo touristin. All rights reserved.
+  </div>
+</footer>
+ <script>
+   
+const translations = {
+  en: {
+    location: "Egypt, Red Sea, Hurghada everywhere you find us",
+    heading: `Cars, Minibuses, Hiace, Taxi Rides<br>
+              Airport Transfer, Hurghada City Tours, and private<br><br>
+              Mix between low price, safety, and luxury`,
+    button: "Our Services",
+    whatsapp: "تحدث معنا على واتساب",
+    table2Title: "We Provide The Luxury Transport And Comfortable Experience For You",
+    experiencesTitle: "From Others' Experiences",
+    exp1Title: "Enjoy an unforgettable journey with us.",
+    exp1Text: "Enjoy an unforgettable journey with our premium limousine service. We provide comfort, safety, and elegance every step of the way.",
+    exp2Title: "Wherever you go, we’re by your side — like family",
+    exp2Text: "We offer a premium limousine service that blends safety, comfort, and care. Wherever you go.",
+    exp3Title: "A comfortable car that reflects that comfort on their faces.",
+    exp3Text: "From departure to destination, it feels like a calm journey in a car designed to embrace you.",
+    exp4Title: "You and your children feel safe and relaxed.",
+    exp4Text: "Comfort isn't just for you — it's for your loved ones too. You’ll feel safe and at ease every moment.",
+    exp5Title: "We know everything about Egyptian culture.",
+    exp5Text: "We’ll take you to hidden gems and share the beauty of Egyptian culture like you’ve never seen.",
+    exp6Title: "By your side — like family",
+    exp6Text: "We offer reliability, friendliness, and safety on every ride.",
+    table3Title: "What makes us different? 🤔",
+    card1Title: "Safety first always",
+    card1Text: "We believe that nothing is more important than the safety of our clients and team. From well-maintained vehicles to professionally trained drivers.",
+    card2Title: "Low price & friendly",
+    card2Text: "We believe that great service shouldn't come at a high cost. Our low prices never compromise on quality, and our friendly team is always here to help you with a smile.",
+    card3Title: "Highly skilled drivers",
+    card3Text: "Our drivers are highly trained, experienced, and committed to delivering a safe, smooth, and professional journey.",
+    card4Title: "Latest vehicle models",
+    card4Text: "Ride in comfort and style with our latest vehicle models, equipped with advanced features for a premium travel experience.",
+    card5Title: "Punctuality & 24 hour service",
+    card5Text: "Time matters — that’s why we value punctuality. With our 24/7 service, count on us anytime, day or night.",
+    s1Title: "Cairo",
+    s1Heading: "Any place in Cairo, you can get to know it up close.",
+    s1Text: "Choose your car and rest assured we make you feel the water.",
+    s1Location: "📍 Cairo",
+    s1Price: "Price Surprise",
+    s1Note: "🚗 Car 1–3, Mini Bus 1–8",
+
+    s2Title: "Luxor",
+    s2Heading: "Any place in Luxor, you can get to know it up close.",
+    s2Text: "Choose your car and rest assured we make you feel the water.",
+    s2Location: "📍 Luxor",
+    s2Price: "Price Surprise",
+    s2Note: "🚗 Car 1–3, Mini Bus 1–8",
+
+    sMainTitle: "Customized Private Trips",
+    sDesc: "Explore Egypt’s history on a private tour to Historical Places (Cairo, Luxor, etc..)",
+    sTagline: "We Care About Your Comfort And Safety",
+    sButton: "More Tours<br>Call Us",
+     "places-title": "Places of enchanting beauty in Hurghada",
+      "gouna-title": "El Gouna",
+      "gouna-text": "El Gouna is one of the most beautiful and upscale tourist areas in Egypt, located about 25 km north of Hurghada. It is nicknamed 'Venice of Egypt' because it features artificial lakes and waterways that separate the small islands, connected by stunning bridges that add a special charm to the city.",
+      "sheraton-title": "Sheraton",
+      "sheraton-text": "Sheraton Street is one of the most famous and oldest tourist streets in the city of Hurghada...",
+      "market-title": "The old market in Hurghada",
+      "market-text": "A lively spot in Hurghada where you can explore spices, souvenirs, handmade crafts...",
+      "mosque-title": "Mina Mosque",
+      "mosque-text": "Hurghada Marina is a modern waterfront promenade lined with yachts, restaurants, cafés...",
+      "marina-title": "Marina",
+      "marina-text": "El Gouna is one of the most beautiful and upscale tourist areas in Egypt...",
+      "mall-title": "Senso Mall",
+      "mall-text": "Senso Mall is a contemporary shopping center offering a variety of international brands...",
+      "aquarium-title": "The aquarium",
+      "aquarium-text": "Hurghada Grand Aquarium is home to hundreds of marine species...",
+      "sharm-title": "Sharm El Naqa",
+      "sharm-text": "Sharm El Naqa is a serene beach south of Hurghada, known for its crystal-clear waters...",
+            "about-title": "sole mo touristin",
+      "about-desc": "Providing elegant and reliable transportation with professional drivers and premium vehicles.",
+      "quick-links-title": "Quick Links",
+      "link-home": "Home",
+      "link-services": "Services",
+      "link-fleet": "Fleet",
+      "link-contact": "Contact",
+      "contact-title": "Contact Us",
+      "phone-number": "+20 100 000 0000",
+      "email-address": "info@luxurylimo.com",
+      "location": "Hurghada, Egypt",
+      "footer-bottom": "© 2025 sole mo touristin. All rights reserved."
+    
+  },
+  es: {
+    location: "Egipto, Mar Rojo, Hurghada, estamos en todas partes",
+    heading: `Coches, minibuses, Hiace, taxis<br>
+              Traslados al aeropuerto, tours por la ciudad de Hurghada y privados<br><br>
+              Combinación de precio bajo, seguridad y lujo`,
+    button: "Nuestros Servicios",
+    whatsapp: "Habla con nosotros en WhatsApp",
+    table2Title: "Brindamos transporte de lujo y una experiencia cómoda para ti",
+    experiencesTitle: "De las experiencias de otros",
+    exp1Title: "Disfruta de un viaje inolvidable con nosotros.",
+    exp1Text: "Disfruta de un viaje inolvidable con nuestro servicio premium de limusina. Ofrecemos comodidad, seguridad y elegancia en cada paso.",
+    exp2Title: "Donde vayas, estamos contigo — como una familia",
+    exp2Text: "Ofrecemos un servicio premium de limusina que combina seguridad, comodidad y cuidado.",
+    exp3Title: "Un coche cómodo que refleja esa comodidad en sus rostros.",
+    exp3Text: "Del punto de partida al destino, se siente como un viaje tranquilo en un coche diseñado para abrazarte.",
+    exp4Title: "Tú y tus hijos se sienten seguros y relajados.",
+    exp4Text: "La comodidad no es solo para ti, sino también para tus seres queridos.",
+    exp5Title: "Conocemos todo sobre la cultura egipcia.",
+    exp5Text: "Te llevaremos a joyas ocultas y compartiremos lo mejor de la cultura egipcia.",
+    exp6Title: "A tu lado — como familia",
+    exp6Text: "Ofrecemos confianza, amabilidad y seguridad en cada viaje.",
+    table3Title: "¿Qué nos hace diferentes? 🤔",
+    card1Title: "Seguridad primero, siempre",
+    card1Text: "Creemos que nada es más importante que la seguridad de nuestros clientes y equipo.",
+    card2Title: "Precio bajo y amigable",
+    card2Text: "Un gran servicio no debería ser caro. Nuestro equipo siempre te ayuda con una sonrisa.",
+    card3Title: "Conductores altamente calificados",
+    card3Text: "Nuestros conductores están altamente capacitados y comprometidos con tu seguridad.",
+    card4Title: "Modelos de vehículos más recientes",
+    card4Text: "Viaja con estilo en nuestros vehículos modernos y confortables.",
+    card5Title: "Puntualidad y servicio 24 horas",
+    card5Text: "Valoramos la puntualidad. Nuestro servicio 24/7 está siempre disponible.",
+        s1Title: "El Cairo",
+    s1Heading: "Cualquier lugar en El Cairo, puedes conocerlo de cerca.",
+    s1Text: "Elige tu coche y siéntete seguro, te haremos sentir el confort.",
+    s1Location: "📍 El Cairo",
+    s1Price: "Precio Sorpresa",
+    s1Note: "🚗 Coche 1–3, Mini Bus 1–8",
+
+    s2Title: "Luxor",
+    s2Heading: "Cualquier lugar en Luxor, puedes conocerlo de cerca.",
+    s2Text: "Elige tu coche y siéntete seguro, te haremos sentir el confort.",
+    s2Location: "📍 Luxor",
+    s2Price: "Precio Sorpresa",
+    s2Note: "🚗 Coche 1–3, Mini Bus 1–8",
+
+    sMainTitle: "Viajes Privados Personalizados",
+    sDesc: "Explora la historia de Egipto en un tour privado a lugares históricos.",
+    sTagline: "Nos importa tu comodidad y seguridad",
+    sButton: "Más Tours<br>Contáctanos",
+          "places-title": "Lugares de belleza encantadora en Hurghada",
+      "gouna-title": "El Gouna",
+      "gouna-text": "El Gouna es una de las zonas turísticas más hermosas y exclusivas de Egipto...",
+      "sheraton-title": "Sheraton",
+      "sheraton-text": "La calle Sheraton es una de las calles turísticas más famosas y antiguas...",
+      "market-title": "El mercado antiguo en Hurghada",
+      "market-text": "Un lugar animado donde puedes explorar especias y recuerdos...",
+      "mosque-title": "Mezquita Mina",
+      "mosque-text": "La Marina de Hurghada es un paseo moderno junto al mar...",
+      "marina-title": "Marina",
+      "marina-text": "El Gouna es una de las zonas turísticas más hermosas...",
+      "mall-title": "Senso Mall",
+      "mall-text": "Senso Mall es un centro comercial moderno que ofrece una variedad...",
+      "aquarium-title": "El acuario",
+      "aquarium-text": "El Gran Acuario de Hurghada alberga cientos de especies marinas...",
+      "sharm-title": "Sharm El Naqa",
+      "sharm-text": "Sharm El Naqa es una playa serena al sur de Hurghada...",
+          "about-title": "sole mo touristin",
+      "about-desc": "Ofreciendo transporte elegante y confiable con conductores profesionales y vehículos premium.",
+      "quick-links-title": "Enlaces Rápidos",
+      "link-home": "Inicio",
+      "link-services": "Servicios",
+      "link-fleet": "Flota",
+      "link-contact": "Contacto",
+      "contact-title": "Contáctanos",
+      "phone-number": "+20 100 000 0000",
+      "email-address": "info@luxurylimo.com",
+      "location": "Hurghada, Egipto",
+      "footer-bottom": "© 2025 sole mo touristin. Todos los derechos reservados."
+  },
+  de: {
+    location: "Ägypten, Rotes Meer, Hurghada – überall sind wir",
+    heading: `Autos, Minibusse, Hiace, Taxifahrten<br>
+              Flughafentransfer, Stadttouren in Hurghada und private Touren<br><br>
+              Kombination aus günstigem Preis, Sicherheit und Luxus`,
+    button: "Unsere Dienstleistungen",
+    whatsapp: "Schreib uns auf WhatsApp",
+    table2Title: "Wir bieten luxuriösen Transport und ein komfortables Erlebnis für Sie",
+    experiencesTitle: "Aus den Erfahrungen anderer",
+    exp1Title: "Genießen Sie eine unvergessliche Reise mit uns.",
+    exp1Text: "Mit unserem Premium-Service genießen Sie Komfort, Sicherheit und Eleganz.",
+    exp2Title: "Wo auch immer Sie hingehen – wir sind bei Ihnen, wie Familie",
+    exp2Text: "Premium-Service mit Sicherheit, Komfort und Fürsorge.",
+    exp3Title: "Ein komfortables Auto, das dieses Gefühl im Gesicht widerspiegelt.",
+    exp3Text: "Eine ruhige Reise in einem Auto, das für Komfort gemacht ist.",
+    exp4Title: "Sie und Ihre Kinder fühlen sich sicher und entspannt.",
+    exp4Text: "Komfort für die ganze Familie, Sicherheit an erster Stelle.",
+    exp5Title: "Wir kennen alles über die ägyptische Kultur.",
+    exp5Text: "Wir zeigen Ihnen versteckte Schätze und echte ägyptische Erlebnisse.",
+    exp6Title: "An Ihrer Seite – wie Familie",
+    exp6Text: "Verlässlichkeit, Freundlichkeit und Sicherheit bei jeder Fahrt.",
+    table3Title: "Was macht uns anders? 🤔",
+    card1Title: "Sicherheit steht immer an erster Stelle",
+    card1Text: "Von gut gewarteten Fahrzeugen bis professionell geschulte Fahrer – Sicherheit zählt.",
+    card2Title: "Günstige Preise & freundlich",
+    card2Text: "Großartiger Service muss nicht teuer sein.",
+    card3Title: "Hochqualifizierte Fahrer",
+    card3Text: "Erfahrene Fahrer mit Fokus auf Sicherheit und Professionalität.",
+    card4Title: "Neueste Fahrzeugmodelle",
+    card4Text: "Moderne, saubere Fahrzeuge mit bester Ausstattung.",
+    card5Title: "Pünktlichkeit & 24-Stunden-Service",
+    card5Text: "Wir sind rund um die Uhr für Sie da – pünktlich und zuverlässig.",
+        s1Title: "Kairo",
+    s1Heading: "Jeder Ort in Kairo – du kannst ihn hautnah erleben.",
+    s1Text: "Wähle dein Auto und sei unbesorgt – wir kümmern uns um deinen Komfort.",
+    s1Location: "📍 Kairo",
+    s1Price: "Preis Überraschung",
+    s1Note: "🚗 Auto 1–3, Mini Bus 1–8",
+
+    s2Title: "Luxor",
+    s2Heading: "Jeder Ort in Luxor – du kannst ihn hautnah erleben.",
+    s2Text: "Wähle dein Auto und sei unbesorgt – wir kümmern uns um deinen Komfort.",
+    s2Location: "📍 Luxor",
+    s2Price: "Preis Überraschung",
+    s2Note: "🚗 Auto 1–3, Mini Bus 1–8",
+
+    sMainTitle: "Individuelle Privatreisen",
+    sDesc: "Erkunde Ägyptens Geschichte auf einer privaten Tour zu historischen Orten.",
+    sTagline: "Wir kümmern uns um deinen Komfort und deine Sicherheit",
+    sButton: "Mehr Touren<br>Kontaktiere uns",
+    "places-title": "Orte von bezaubernder Schönheit in Hurghada",
+      "gouna-title": "El Gouna",
+      "gouna-text": "El Gouna ist eines der schönsten und gehobensten Touristengebiete in Ägypten...",
+      "sheraton-title": "Sheraton",
+      "sheraton-text": "Die Sheraton Street ist eine der berühmtesten und ältesten Touristenstraßen...",
+      "market-title": "Der alte Markt in Hurghada",
+      "market-text": "Ein lebhafter Ort, an dem Sie Gewürze, Souvenirs und Kunsthandwerk entdecken...",
+      "mosque-title": "Mina-Moschee",
+      "mosque-text": "Die Hurghada Marina ist eine moderne Promenade mit Yachten...",
+      "marina-title": "Marina",
+      "marina-text": "El Gouna ist eines der schönsten Touristengebiete in Ägypten...",
+      "mall-title": "Senso Mall",
+      "mall-text": "Senso Mall ist ein modernes Einkaufszentrum mit internationalen Marken...",
+      "aquarium-title": "Das Aquarium",
+      "aquarium-text": "Das Grand Aquarium in Hurghada beherbergt hunderte Meeresarten...",
+      "sharm-title": "Sharm El Naqa",
+      "sharm-text": "Sharm El Naqa ist ein ruhiger Strand südlich von Hurghada...",
+            "about-title": "sole mo touristin",
+      "about-desc": "Eleganter und zuverlässiger Transport mit professionellen Fahrern und Premium-Fahrzeugen.",
+      "quick-links-title": "Schnellzugriffe",
+      "link-home": "Startseite",
+      "link-services": "Dienstleistungen",
+      "link-fleet": "Flotte",
+      "link-contact": "Kontakt",
+      "contact-title": "Kontaktieren Sie uns",
+      "phone-number": "+20 100 000 0000",
+      "email-address": "info@luxurylimo.com",
+      "location": "Hurghada, Ägypten",
+      "footer-bottom": "© 2025 sole mo touristin. Alle Rechte vorbehalten."
+  },
+  ru: {
+    location: "Египет, Красное море, Хургада — мы везде",
+    heading: `Машины, микроавтобусы, Hiace, такси<br>
+              Трансферы в аэропорт, туры по Хургаде и частные поездки<br><br>
+              Сочетание низкой цены, безопасности и роскоши`,
+    button: "Наши услуги",
+    whatsapp: "Свяжитесь с нами в WhatsApp",
+    table2Title: "Мы предоставляем роскошный транспорт и комфортное путешествие для вас",
+    experiencesTitle: "Из опыта других",
+    exp1Title: "Насладитесь незабываемым путешествием с нами.",
+    exp1Text: "Комфорт, безопасность и элегантность на каждом шагу.",
+    exp2Title: "Куда бы вы ни пошли — мы рядом, как семья",
+    exp2Text: "Надёжный и заботливый лимузин-сервис для вас.",
+    exp3Title: "Комфортный автомобиль, который отражает спокойствие на лицах.",
+    exp3Text: "Поездка, полная уюта и спокойствия.",
+    exp4Title: "Вы и ваши дети чувствуете себя в безопасности и расслабленно.",
+    exp4Text: "Забота о каждом члене семьи, особенно о детях.",
+    exp5Title: "Мы знаем всё о египетской культуре.",
+    exp5Text: "Покажем вам то, что скрыто от обычных туристов.",
+    exp6Title: "Рядом с вами — как семья",
+    exp6Text: "Мы предлагаем надёжность, дружелюбие и безопасность.",
+    table3Title: "Что делает нас особенными? 🤔",
+    card1Title: "Безопасность прежде всего",
+    card1Text: "Профессиональные водители и отличные машины — для вашей безопасности.",
+    card2Title: "Низкая цена и дружелюбие",
+    card2Text: "Сервис высокого уровня по доступной цене.",
+    card3Title: "Высококвалифицированные водители",
+    card3Text: "Профессионалы своего дела с опытом и заботой.",
+    card4Title: "Современные модели авто",
+    card4Text: "Новые, чистые, технологичные авто для комфортных поездок.",
+    card5Title: "Пунктуальность и круглосуточный сервис",
+    card5Text: "Мы всегда на связи — 24/7, без опозданий.",
+       s1Title: "Каир",
+    s1Heading: "Любое место в Каире можно узнать поближе.",
+    s1Text: "Выберите автомобиль и будьте спокойны — мы обеспечим комфорт.",
+    s1Location: "📍 Каир",
+    s1Price: "Сюрприз в цене",
+    s1Note: "🚗 Авто 1–3, Минивэн 1–8",
+
+    s2Title: "Луксор",
+    s2Heading: "Любое место в Луксоре можно узнать поближе.",
+    s2Text: "Выберите автомобиль и будьте спокойны — мы обеспечим комфорт.",
+    s2Location: "📍 Луксор",
+    s2Price: "Сюрприз в цене",
+    s2Note: "🚗 Авто 1–3, Минивэн 1–8",
+
+    sMainTitle: "Индивидуальные Частные Туры",
+    sDesc: "Исследуйте историю Египта в частных турах по историческим местам.",
+    sTagline: "Нам важен ваш комфорт и безопасность",
+    sButton: "Больше туров<br>Свяжитесь с нами",
+    "places-title": "Места волшебной красоты в Хургаде",
+      "gouna-title": "Эль-Гуна",
+      "gouna-text": "Эль-Гуна — один из самых красивых и престижных курортов Египта...",
+      "sheraton-title": "Шератон",
+      "sheraton-text": "Улица Шератон — одна из самых известных и старейших туристических улиц...",
+      "market-title": "Старый рынок в Хургаде",
+      "market-text": "Оживлённое место, где можно найти специи, сувениры, ремесленные изделия...",
+      "mosque-title": "Мечеть Мина",
+      "mosque-text": "Марина Хургады — это современная набережная с яхтами и ресторанами...",
+      "marina-title": "Марина",
+      "marina-text": "Эль-Гуна — один из самых престижных туристических районов...",
+      "mall-title": "Сенсо Молл",
+      "mall-text": "Senso Mall — современный торговый центр с международными брендами...",
+      "aquarium-title": "Аквариум",
+      "aquarium-text": "В большом аквариуме Хургады обитают сотни морских существ...",
+      "sharm-title": "Шарм Эль Нака",
+      "sharm-text": "Шарм Эль Нака — это уединённый пляж к югу от Хургады...",
+            "about-title": "sole mo touristin",
+      "about-desc": "Предоставляем элегантный и надежный транспорт с профессиональными водителями и премиальными автомобилями.",
+      "quick-links-title": "Быстрые ссылки",
+      "link-home": "Главная",
+      "link-services": "Услуги",
+      "link-fleet": "Автопарк",
+      "link-contact": "Контакты",
+      "contact-title": "Свяжитесь с нами",
+      "phone-number": "+20 100 000 0000",
+      "email-address": "info@luxurylimo.com",
+      "location": "Хургада, Египет",
+      "footer-bottom": "© 2025 sole mo touristin. Все права защищены."
+  }
+};
+
+
+   const langSelector = document.getElementById("language-selector");
+
+langSelector.addEventListener("change", () => {
+  const lang = langSelector.value;
+  const t = translations[lang];
+
+
+  // === تحديث عناصر slider-section ===
+  document.getElementById("s1-title").textContent = t.s1Title;
+  document.getElementById("s1-heading").textContent = t.s1Heading;
+  document.getElementById("s1-text").textContent = t.s1Text;
+  document.getElementById("s1-location").textContent = t.s1Location;
+  document.getElementById("s1-price").textContent = t.s1Price;
+  document.getElementById("s1-note").textContent = t.s1Note;
+
+  document.getElementById("s2-title").textContent = t.s2Title;
+  document.getElementById("s2-heading").textContent = t.s2Heading;
+  document.getElementById("s2-text").textContent = t.s2Text;
+  document.getElementById("s2-location").textContent = t.s2Location;
+  document.getElementById("s2-price").textContent = t.s2Price;
+  document.getElementById("s2-note").textContent = t.s2Note;
+
+  document.getElementById("s-main-title").textContent = t.sMainTitle;
+  document.getElementById("s-desc").textContent = t.sDesc;
+  document.getElementById("s-tagline").textContent = t.sTagline;
+  document.getElementById("s-button").innerHTML = t.sButton;
+  // table1
+  document.getElementById("location-text").textContent = t.location;
+  document.getElementById("main-heading").innerHTML = t.heading;
+  document.getElementById("services-button").textContent = t.button;
+  document.getElementById("whatsapp-tooltip").textContent = t.whatsapp;
+
+  // table3
+  document.getElementById("table3-title").textContent = t.table3Title;
+  for (let i = 1; i <= 5; i++) {
+    document.getElementById(`card${i}-title`).textContent = t[`card${i}Title`];
+    document.getElementById(`card${i}-text`).textContent = t[`card${i}Text`];
+  }
+    // table2
+  document.getElementById("table2-title").textContent = t.table2Title;
+document.getElementById("experiences-title").textContent = t.experiencesTitle;
+
+for (let i = 1; i <= 6; i++) {
+  document.getElementById(`exp${i}-title`).textContent = t[`exp${i}Title`];
+  document.getElementById(`exp${i}-text`).textContent = t[`exp${i}Text`];
+}
+document.getElementById("places-title").textContent = t["places-title"];
+document.getElementById("gouna-title").textContent = t["gouna-title"];
+document.getElementById("gouna-desc").textContent = t["gouna-text"];
+document.getElementById("sheraton-title").textContent = t["sheraton-title"];
+document.getElementById("sheraton-desc").textContent = t["sheraton-text"];
+document.getElementById("market-title").textContent = t["market-title"];
+document.getElementById("market-desc").textContent = t["market-text"];
+document.getElementById("mina-title").textContent = t["mosque-title"];
+document.getElementById("mina-desc").textContent = t["mosque-text"];
+document.getElementById("marina-title").textContent = t["marina-title"];
+document.getElementById("marina-desc").textContent = t["marina-text"];
+document.getElementById("senzo-title").textContent = t["mall-title"];
+document.getElementById("senzo-desc").textContent = t["mall-text"];
+document.getElementById("aquarium-title").textContent = t["aquarium-title"];
+document.getElementById("aquarium-desc").textContent = t["aquarium-text"];
+document.getElementById("naqa-title").textContent = t["sharm-title"];
+document.getElementById("naqa-desc").textContent = t["sharm-text"];
+
+if (!texts) return;
+
+    for (const key in texts) {
+      const el = document.getElementById(key);
+      if (el) el.innerHTML = texts[key];
+    }
+
+
+
+  // تهيئة اللغة الافتراضية عند تحميل الصفحة
+  window.addEventListener("DOMContentLoaded", () => {
+    selector.value = "en";  // يمكنك تغييره إلى "ar" أو أي لغة أخرى تريدها افتراضياً
+    selector.dispatchEvent(new Event("change"));
+  });
+
+});
+
+
+
+
+    // langSelector.addEventListener("change", () => {
+    //   const lang = langSelector.value;
+    //   document.getElementById("location-text").textContent = translations[lang].location;
+    //   document.getElementById("main-heading").innerHTML = translations[lang].heading;
+    //   document.getElementById("services-button").textContent = translations[lang].button;
+    //   document.getElementById("whatsapp-tooltip").textContent = translations[lang].whatsapp;
+    // });
   function showVideo() {
     const videoContainer = document.getElementById('videoContainer');
     const overlayContent = document.getElementById('overlayContent');
@@ -385,24 +805,24 @@
     createCarousel("carouselTrack2", "carousel2");
     createCarousel("carouselTrack3", "carousel3");
 
-    const testimonials = [
-    {
-      text: "“The driver was on time and extremely professional. Great service!”",
-      name: "Emily Johnson — USA"
-    },
-    {
-      text: "“Clean car, smooth ride, and very polite driver. Highly recommended.”",
-      name: "Carlos Ramirez — Spain"
-    },
-    {
-      text: "“It was the best transportation experience I had in Hurghada. Thank you!”",
-      name: "Anna Becker — Germany"
-    },
-    {
-      text: "“Friendly driver and everything was on time. Perfect for my vacation!”",
-      name: "James Smith — UK"
-    }
-  ];
+//     const testimonials = [
+//     {
+//       text: "“The driver was on time and extremely professional. Great service!”",
+//       name: "Emily Johnson — USA"
+//     },
+//     {
+//       text: "“Clean car, smooth ride, and very polite driver. Highly recommended.”",
+//       name: "Carlos Ramirez — Spain"
+//     },
+//     {
+//       text: "“It was the best transportation experience I had in Hurghada. Thank you!”",
+//       name: "Anna Becker — Germany"
+//     },
+//     {
+//       text: "“Friendly driver and everything was on time. Perfect for my vacation!”",
+//       name: "James Smith — UK"
+//     }
+//   ];
 
   let currentIndex = 0;
   const textEl = document.getElementById("testimonialText");
@@ -421,6 +841,7 @@
   }
 
   setInterval(showNextTestimonial, 5000);
+
 
   </script>
 </body>
