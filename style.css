@@ -1010,3 +1010,14 @@ footer p{
         font-size: 13px;
       }
     }
+       .no2 {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #74cdde;
+      color: black;
+      cursor: pointer;
+      margin-left: 3%;
+      margin-top: 2%;
+    }
