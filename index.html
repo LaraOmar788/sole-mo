@@ -223,7 +223,7 @@
     <div class="cd1">
       <img src="img/ulica-sheraton1.jpg">
       <h2 id="sheraton-title">Sheraton</h2>
-      <p id="sheraton-desc">Sheraton Street is one of the most famous and oldest tourist streets in the city of Hurghada, and it serves as the 'downtown' for visitors of all nationalities. The street extends for a considerable length and combines popular vibes with modern appearances, making it a distinctive destination for anyone seeking enjoyment and variety.</p>
+      <p id="sheraton-desc">Sheraton Street is one of the most famous and oldest tourist streets in the city of Hurghada, and it serves as the 'downtown' for visitors of all nationalities. The street extends for a considerable length and combines popular vibes with modern appearances, making it a distinctive  </p>
     </div>
 
     <div class="cd1">
@@ -272,9 +272,12 @@
 <div class="obout">
   <div class="overlay-content" id="overlayContent">
     <h1>Experience the Luxury Ride</h1>
-    <button onclick="showVideo()">Book Now</button>
+    <button onclick="showVideo()" class="button">Book Now</button>
+         <br>
+     <button  class="no2" id="non">OPEN Please</button>
+
   </div>
-  <button  class="no2" >OPEN Please</button>
+ 
   <button onclick="closeVideo()" class="no" id="closeBtn" style="display:none;">✖ Close</button>
 
   <div class="video-container" id="videoContainer" style="display:none;">
@@ -747,6 +750,7 @@ if (!texts) return;
     const source = document.getElementById('videoSource');
     const video = document.getElementById('responsiveVideo');
     const closeBtn = document.getElementById('closeBtn');
+    const non=document.getElementById('non');
 
     // اختيار الفيديو حسب حجم الشاشة
     if (window.innerWidth >= 768) {
@@ -759,6 +763,7 @@ if (!texts) return;
     videoContainer.style.display = 'block';
     overlayContent.style.display = 'none';
     closeBtn.style.display = 'block';
+     non.style.display = 'none';
   }
 
   function closeVideo() {
@@ -779,50 +784,66 @@ if (!texts) return;
         button.style.opacity = '1';
       }, 2200);
     });
-    function createCarousel(trackId, wrapperId, slidesToShow = 4) {
-      const track = document.getElementById(trackId);
-      const wrapper = document.getElementById(wrapperId);
-      const slideWidth = 270 + 20;
-      const totalSlides = track.children.length;
-      let index = 0;
-      let started = false;
+function createCarousel(trackId, wrapperId, slidesToShow = 4) {
+  const track = document.getElementById(trackId);
+  const wrapper = document.getElementById(wrapperId);
+  const slideWidth = 270 + 20; // العرض + الهامش
+  const totalSlides = track.children.length;
+  let index = 0;
+  let intervalId;
+  let started = false;
 
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting && !started) {
-          started = true;
-          setInterval(() => {
-            index++;
-            if (index > totalSlides - slidesToShow) index = 0;
-            track.style.transform = `translateX(-${index * slideWidth}px)`;
-          }, 3000);
-        }
-      }, { threshold: 0.5 });
+  // ✅ دالة التمرير الخاصة بهذا السلايدر فقط
+  function scrollSlides() {
+    index++;
+    if (index > totalSlides - slidesToShow) index = 0;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
 
-      observer.observe(wrapper);
+  // ✅ تبدأ الحركة فقط عندما يظهر السلايدر في الشاشة
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !started) {
+      started = true;
+      intervalId = setInterval(scrollSlides, 2500); // أسرع شوية
     }
+  }, { threshold: 0.3 }); // أقل عشان يبدأ بدري
+
+  // ✅ عند دخول الماوس: توقف
+  wrapper.addEventListener("mouseenter", () => {
+    clearInterval(intervalId);
+  });
+
+  // ✅ عند الخروج: يعيد الحركة
+  wrapper.addEventListener("mouseleave", () => {
+    intervalId = setInterval(scrollSlides, 2500);
+  });
+
+  observer.observe(wrapper);
+}
+
 
     createCarousel("carouselTrack", "carousel");
     createCarousel("carouselTrack2", "carousel2");
     createCarousel("carouselTrack3", "carousel3");
 
-//     const testimonials = [
-//     {
-//       text: "“The driver was on time and extremely professional. Great service!”",
-//       name: "Emily Johnson — USA"
-//     },
-//     {
-//       text: "“Clean car, smooth ride, and very polite driver. Highly recommended.”",
-//       name: "Carlos Ramirez — Spain"
-//     },
-//     {
-//       text: "“It was the best transportation experience I had in Hurghada. Thank you!”",
-//       name: "Anna Becker — Germany"
-//     },
-//     {
-//       text: "“Friendly driver and everything was on time. Perfect for my vacation!”",
-//       name: "James Smith — UK"
-//     }
-//   ];
+    const testimonials = [
+    {
+      text: "“The driver was on time and extremely professional. Great service!”",
+      name: "Emily Johnson — USA"
+    },
+    {
+      text: "“Clean car, smooth ride, and very polite driver. Highly recommended.”",
+      name: "Carlos Ramirez — Spain"
+    },
+    {
+      text: "“It was the best transportation experience I had in Hurghada. Thank you!”",
+      name: "Anna Becker — Germany"
+    },
+    {
+      text: "“Friendly driver and everything was on time. Perfect for my vacation!”",
+      name: "James Smith — UK"
+    }
+  ];
 
   let currentIndex = 0;
   const textEl = document.getElementById("testimonialText");
